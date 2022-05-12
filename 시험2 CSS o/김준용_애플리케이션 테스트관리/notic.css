@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 2px 2px 1px gray;
+}
+
+hr {
+    border: 1px dashed;
+}
+
+h1 {
+    color: white;
+    background-color: darkblue;
+    padding: 25px;
+    text-align: center;
+}
+
+ul {
+    width: auto;
+    height: 35px;
+    display: flex;
+    justify-content:space-around;
+}
+
+li {
+    list-style-type: none;
+    float:left;
+    font-weight: bold;
+    padding: 5px 80px;
+}
+
+.iframe {padding: 10px;}
+
+.src1 > div:last-child {
+    width: 200px;
+    height: 120px;
+    background-color: lightgray;
+    padding: 10px
+}
+
+.type {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.src1 {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.src2 {
+    width: auto;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.src3 {
+    width: auto;
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.N::after {
+    content: "N";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.last {
+    width: auto;
+    height: 50px;
+    background-color: lightgray;
+    padding: 30px 40px;
+    text-align: center;
+}

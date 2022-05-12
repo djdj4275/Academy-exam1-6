@@ -1,0 +1,22 @@
+git init (초기화)
+git add . (인덱스 추가)
+git commit -m '기록할 내용' (커밋 기록)
+git log (폴더에 커밋을 남김)
+
+git remote add origin '주소' (원격저장소 알려주기)
+git push -u origin master (저장한 origin 주소에 저장)
+
+====================
+
+git branch 브랜치이름 (브랜치생성)
+git checkout 브랜치이름 (브랜치로 이동)
+git branch (내용확인)
+
+git merge 머지할브랜치이름 [-항상 마스터브랜치에서 머지를 해야한다-]
+
+merge 충돌시 
+
+1. 충돌된 파일 확인
+2. 원하는 코드만 남겨둠
+3. git add .
+4. git commit -m '충돌수정코멘트'

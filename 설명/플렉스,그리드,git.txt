@@ -1,0 +1,38 @@
+input type=radio 는 속성에 step을 넣어서 수치를 입력하면
+그 수치의 배수만큼 올라간다.
+
+inline-block 속성은 높이,넓이 값 정해줘야함
+
+clear를 사용하면 앞에 사용한 효과에 영향을 받지않게 할수있다.
+
+display : flex 는 요소들을 왼쪽으로 한줄로 붙인다
+
+order 는 글이 써지는 진행 순서를 바꿔준다.
+
+
+git 다운 / git hub 들어가서 회원가입
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+$ git init (초기화)
+$ git push -u origin master (main이 아니라 master로 수정)
+$ git remote set-url origin https://github.com/djdj4275/gitTest.git
+$ git log
+
+commit = 저장 
+remote = 보내기
+
+sourcetree 설치
+
+$ git commit -m ' '
+$ git add .
+
+
+init > add > commit > log > remote > push
+
+
+크롬 웹스토어에서 octotree 확장프로그램 설치
+
+git help
+git merge - 서로 다른 충돌사안 해결

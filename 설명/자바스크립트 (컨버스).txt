@@ -1,0 +1,47 @@
+자바스크립트는 대 소문자 구분해야함
+
+context.arc(50,50,40,0,2*Math.PI);
+
+50,50 : 중심정
+40 : 반지름
+0 : 시작위치 
+Math.PI : 원 또는 반원
+
+context.beginPath(); : 초기화
+
+context.fill(); : 색채우기
+
+context.stroke(); : 그리기 (끝 태그)
+
+// : 주석
+
+/**/ : 별 사이에 글을 쓰면 여러줄로 주석쓰기 가능
+
+context.moveTo( , ) : 시작점 바꾸기
+context.lineTo( , ) : 줄 그을 끝 지점 
+
+context.font = "30px Arial"; : 쓸 글의 폰트 (30px : 글자의 크기)
+context.fillStyle = "" : 쓸 글의 색
+context.fillText("", , ); " 쓸 글과 좌표 (가장 앞글자의 위치, 글자의 바닥위치)
+
+
+(그라디언트는 선형/원형으로 두 종류가 존재)
+let grd = context.createRadialGradient(75,200,5,90,200,100);
+: Radial은 원형 그라디언트임 (시작 원의 x,y 중심점,반지름,끝나는 원의 x,y중심점,반지름)
+grd.addColorStop(0,"red");  
+grd.addColorStop(1,"white");  : 그라데이션 색의 두가지
+
+context.fillStyle = grd : 그라데이션 스타일로 적용
+context.fillRect(0,150,150,50) : 크기
+
+let grdline = context.createLinearGradient(0,200,150,200);
+: Linear는 선형 그라디언트임 (선형그라디언트 (시작 x,y,끝 x,y))
+grdline.addColorStop(0,"blue");
+grdline.addColorStop(1,"yellow");
+
+context.fillStyle = grdline;
+context.fillRect(0,150,150,50);
+
+context.strokeStyle = grdline;
+context.rect(0,120,150,20);
+context.stroke();
